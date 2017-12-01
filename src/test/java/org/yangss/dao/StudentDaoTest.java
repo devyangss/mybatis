@@ -10,10 +10,14 @@ import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.junit.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.yangss.pojo.Student;
 
 public class StudentDaoTest {
-
+	
+	final Logger logger = LoggerFactory.getLogger(StudentDaoTest.class);
+	
 	@Test
 	public void testInsert() throws IOException {
 		Date date = new Date();
@@ -52,6 +56,11 @@ public class StudentDaoTest {
 		SqlSession session = sqlSessionFactory.openSession();
 		
 		Student student = (Student) session.selectOne("findById", 1005);
+		if (student == null) {
+			System.out.println("查询不到数据");
+			logger.debug("查询不到数据");
+			return;
+		}
 		student.setUpdateTime(date);
 		
 		int ret = session.update("update", student);
