@@ -2,7 +2,7 @@
 <!DOCTYPE mapper
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="StudentDao">
+<mapper namespace="IStudentDao">
   <resultMap type="Student" id="studentMap">
     <id property="id" column="id" />
     <result property="createTime" column="create_time"/>

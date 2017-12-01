@@ -1,4 +1,4 @@
-package org.yangss.pojo;
+package com.cn.mybatis.entity;
 
 import java.util.Date;
 

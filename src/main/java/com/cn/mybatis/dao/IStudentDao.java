@@ -1,10 +1,10 @@
-package org.yangss.dao;
+package com.cn.mybatis.dao;
 
 import java.util.List;
 
-import org.yangss.pojo.Student;
+import com.cn.mybatis.entity.Student;
 
-public interface StudentDao {
+public interface IStudentDao {
 
 	public int add(Student student);
 	public boolean update(Student student);

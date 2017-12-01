@@ -1,4 +1,4 @@
-package org.yangss.mybatis;
+package com.cn.mybatis;
 
 import java.io.IOException;
 import java.io.InputStream;

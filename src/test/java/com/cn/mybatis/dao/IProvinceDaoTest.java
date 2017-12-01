@@ -1,4 +1,4 @@
-package org.yangss.dao;
+package com.cn.mybatis.dao;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -11,13 +11,13 @@ import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.yangss.pojo.Province;
 
+import com.cn.mybatis.entity.Province;
 import com.google.gson.Gson;
 
-public class ProvinceDaoTest {
+public class IProvinceDaoTest {
 	
-	final Logger logger = LoggerFactory.getLogger(ProvinceDaoTest.class);
+	final Logger logger = LoggerFactory.getLogger(IProvinceDaoTest.class);
 	
 	@Test
 	public void testFindAllArea() throws IOException {

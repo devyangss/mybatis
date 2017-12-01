@@ -1,4 +1,4 @@
-package org.yangss.dao;
+package com.cn.mybatis.dao;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -12,11 +12,12 @@ import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.yangss.pojo.Student;
 
-public class StudentDaoTest {
+import com.cn.mybatis.entity.Student;
+
+public class IStudentDaoTest {
 	
-	final Logger logger = LoggerFactory.getLogger(StudentDaoTest.class);
+	final Logger logger = LoggerFactory.getLogger(IStudentDaoTest.class);
 	
 	@Test
 	public void testInsert() throws IOException {
