@@ -2,8 +2,6 @@ package com.cn.mybatis.entity;
 
 import java.util.Date;
 
-import sun.net.www.content.text.plain;
-
 public class Area {
 	private int id;
 	private int status;
