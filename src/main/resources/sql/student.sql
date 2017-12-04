@@ -9,4 +9,4 @@ CREATE TABLE `student` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `uk_idcard` (`idcard`),
   KEY `idx_type` (`name`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8 COMMENT='学生信息表';
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8 COMMENT='学生信息表';
